@@ -1,90 +1,81 @@
-# Projeto CDB - Web API e AplicaÁ„o Angular
+# Projeto CDB - Web API e Aplica√ß√£o Angular
 
-Este repositÛrio contÈm uma soluÁ„o que combina uma API desenvolvida com **C# Web API** no **.NET Framework 4.8.1** e uma aplicaÁ„o **Angular 17** para a interface do usu·rio. A soluÁ„o tambÈm inclui testes de unidade utilizando **xUnit**.
-
-## Õndice
-
-- [Requisitos](#requisitos)
-- [Clonando o Projeto](#clonando-o-projeto)
-- [InstalaÁ„o](#instalaÁ„o)
-- [ConfiguraÁ„o do IIS no Windows](#configuraÁ„o-do-iis-no-windows)
-- [Executando a API e a AplicaÁ„o Angular](#executando-a-api-e-a-aplicaÁ„o-angular)
-- [Executando os Testes](#executando-os-testes)
+Este reposit√≥rio cont√©m uma solu√ß√£o que combina uma API desenvolvida com **C# Web API** no **.NET Framework 4.8.1** e uma aplica√ß√£o **Angular 17** para a interface do usu√°rio. A solu√ß√£o tamb√©m inclui testes de unidade utilizando **xUnit**.
 
 ## Requisitos
 
-Para rodar este projeto, vocÍ precisar· ter os seguintes softwares instalados em sua m·quina:
+Para rodar este projeto, voc√™ precisar√° ter os seguintes softwares instalados em sua m√°quina:
 
 - **.NET Framework 4.8.1**
 - **Visual Studio 2022** com os pacotes de desenvolvimento .NET e ASP.NET instalados
-- **Node.js** (vers„o 18 ou superior) com o **npm** (gerenciador de pacotes do Node)
-- **Angular CLI** (vers„o 17)
+- **Node.js** (vers√£o 18 ou superior) com o **npm** (gerenciador de pacotes do Node)
+- **Angular CLI** (vers√£o 17)
 - **IIS (Internet Information Services)** habilitado no Windows
 
 ## Clonando o Projeto
 
-Para clonar este repositÛrio, siga os passos abaixo:
+Para clonar este reposit√≥rio, siga os passos abaixo:
 
 1. Abra o terminal de sua escolha.
-2. Navegue atÈ o diretÛrio onde deseja clonar o repositÛrio.
+2. Navegue at√© o diret√≥rio onde deseja clonar o reposit√≥rio.
 3. Execute o comando:
 
 ```bash
 git clone https://github.com/seu-usuario/repositorio.git
 ```
-4. ApÛs o clone, navegue atÈ o diretÛrio do projeto:
+4. Ap√≥s o clone, navegue at√© o diret√≥rio do projeto:
 
 ```bash
 cd ProjetoCdb/src
 ```
-## InstalaÁ„o
-1. Instalando as DependÍncias do Projeto Angular
-Navegue atÈ o diretÛrio AngularWeb dentro do projeto e instale as dependÍncias:
+## Instala√ß√£o
+1. Instalando as Depend√™ncias do Projeto Angular
+Navegue at√© o diret√≥rio AngularWeb dentro do projeto e instale as depend√™ncias:
 ```bash
 cd Web/AngularWeb
 npm install
 ```
-2. Instalando as DependÍncias do Projeto Web API
-Abra o Visual Studio, navegue atÈ o diretÛrio WebApi/ApiServer e abra a soluÁ„o (.sln). O Visual Studio ir· restaurar as dependÍncias automaticamente ao carregar o projeto.
+2. Instalando as Depend√™ncias do Projeto Web API
+Abra o Visual Studio, navegue at√© o diret√≥rio WebApi/ApiServer e abra a solu√ß√£o (.sln). O Visual Studio ir√° restaurar as depend√™ncias automaticamente ao carregar o projeto.
 
 3. Instalando os Pacotes NuGet
-Certifique-se de que todos os pacotes NuGet est„o atualizados. No Visual Studio, clique com o bot„o direito no projeto ApiServer, depois em Gerenciar Pacotes NuGet e clique em Restaurar
+Certifique-se de que todos os pacotes NuGet est√£o atualizados. No Visual Studio, clique com o bot√£o direito no projeto ApiServer, depois em Gerenciar Pacotes NuGet e clique em Restaurar
 ou
-Ao abrir o Visual Studio v· em Tools => Nuget Package Manager => Package Manager Console e ao abrir a janela digite.
+Ao abrir o Visual Studio v√° em Tools => Nuget Package Manager => Package Manager Console e ao abrir a janela digite.
 ```bash
 dotnet restore
 ```
 
-**ConfiguraÁ„o do IIS no Windows**
+**Configura√ß√£o do IIS no Windows**
 Para configurar o IIS (Internet Information Services) para rodar a API:
 
-Abra o Painel de Controle e v· para Programas > Ativar ou desativar recursos do Windows.
-Marque a caixa para Internet Information Services e certifique-se de que os componentes essenciais est„o habilitados (como o Servidor Web e o ASP.NET).
+Abra o Painel de Controle e v√° para Programas > Ativar ou desativar recursos do Windows.
+Marque a caixa para Internet Information Services e certifique-se de que os componentes essenciais est√£o habilitados (como o Servidor Web e o ASP.NET).
 Verifique se o IIS esta funcionando abrindo o browser e digiando http://localhost, devera abrir a tela padrao do IIS.
 
-**Executando a API e a AplicaÁ„o Angular**
+**Executando a API e a Aplica√ß√£o Angular**
 1. Executando a API
 Para rodar a API com o IIS Express no Visual Studio:
 
 No Visual Studio, selecione o projeto ApiServer.
-Clique no bot„o Iniciar ou pressione F5 para rodar o projeto.
-Se estiver usando o IIS, certifique-se de que o site est· rodando corretamente no Gerenciador do IIS.
+Clique no bot√£o Iniciar ou pressione F5 para rodar o projeto.
+Se estiver usando o IIS, certifique-se de que o site est√° rodando corretamente no Gerenciador do IIS.
 
-2. Executando a AplicaÁ„o Angular
-No terminal, navegue atÈ o diretÛrio AngularWeb e execute o seguinte comando:
+2. Executando a Aplica√ß√£o Angular
+No terminal, navegue at√© o diret√≥rio AngularWeb e execute o seguinte comando:
 ```bash
 ng s
 ```
-O terminal ir· indicar a porta em que a aplicaÁ„o Angular estar· funcionando, copie e cole no browser.
+O terminal ir√° indicar a porta em que a aplica√ß√£o Angular estar√° funcionando, copie e cole no browser.
 
 
 1. Executando os Testes de Unidade
-Para rodar os testes de unidade no Visual Studio v· em Teste Explore e selecione como deseja executar:
+Para rodar os testes de unidade no Visual Studio v√° em Teste Explore e selecione como deseja executar:
 
 No Visual Studio, selecione o projeto ApiServer.
 
-### ObservaÁ„o
-Existem outras maneiras de executar a aplicaÁ„o, mas n„o abordarei neste teste.
+### Observa√ß√£o
+Existem outras maneiras de executar a aplica√ß√£o, mas n√£o abordarei neste teste.
 
 
 
