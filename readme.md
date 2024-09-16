@@ -21,7 +21,7 @@ Para clonar este repositório, siga os passos abaixo:
 3. Execute o comando:
 
 ```bash
-git clone https://github.com/seu-usuario/repositorio.git
+git clone https://github.com/leschar/cdb.git
 ```
 4. Após o clone, navegue até o diretório do projeto:
 
