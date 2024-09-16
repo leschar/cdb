@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{7B82053F-EDC3-4B93-8635-3EB1DDCDCDFA}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{71A1F8AE-B777-4ABC-88D8-113481E06E94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5C185B8E-96FF-4983-AD2A-DB58972D819E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{3F4D1E9F-FEBF-4F28-9791-A5E8D000D726}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{D3B68433-1A10-4AD9-9263-5D2D3B69E74D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiServer", "ApiServer\ApiServer.csproj", "{133EA978-6936-4E4B-A7E7-937D6FCD2EB8}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "AngularWeb", "Web\AngularWeb\AngularWeb.esproj", "{DB91EBE3-E414-4EB0-9E31-D8C84D5505D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetFrameworkTests", "NetFrameworkTests\NetFrameworkTests.csproj", "{69B247FC-E75E-44B0-ACF5-00E88A10BC66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{133EA978-6936-4E4B-A7E7-937D6FCD2EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133EA978-6936-4E4B-A7E7-937D6FCD2EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133EA978-6936-4E4B-A7E7-937D6FCD2EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133EA978-6936-4E4B-A7E7-937D6FCD2EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB91EBE3-E414-4EB0-9E31-D8C84D5505D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB91EBE3-E414-4EB0-9E31-D8C84D5505D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB91EBE3-E414-4EB0-9E31-D8C84D5505D1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DB91EBE3-E414-4EB0-9E31-D8C84D5505D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB91EBE3-E414-4EB0-9E31-D8C84D5505D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB91EBE3-E414-4EB0-9E31-D8C84D5505D1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{69B247FC-E75E-44B0-ACF5-00E88A10BC66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69B247FC-E75E-44B0-ACF5-00E88A10BC66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69B247FC-E75E-44B0-ACF5-00E88A10BC66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69B247FC-E75E-44B0-ACF5-00E88A10BC66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F4D1E9F-FEBF-4F28-9791-A5E8D000D726} = {71A1F8AE-B777-4ABC-88D8-113481E06E94}
+		{D3B68433-1A10-4AD9-9263-5D2D3B69E74D} = {71A1F8AE-B777-4ABC-88D8-113481E06E94}
+		{133EA978-6936-4E4B-A7E7-937D6FCD2EB8} = {D3B68433-1A10-4AD9-9263-5D2D3B69E74D}
+		{DB91EBE3-E414-4EB0-9E31-D8C84D5505D1} = {3F4D1E9F-FEBF-4F28-9791-A5E8D000D726}
+		{69B247FC-E75E-44B0-ACF5-00E88A10BC66} = {5C185B8E-96FF-4983-AD2A-DB58972D819E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39F3804F-6DE2-42CA-9053-60E394A29B60}
+	EndGlobalSection
+EndGlobal

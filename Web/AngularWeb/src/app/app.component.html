@@ -1,0 +1,31 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2>{{ title }}</h2>
+
+      <div class="form-group my-2 mt-5">
+        <label for="texto1">Valor aplicação:</label>
+        <input type="text" class="form-control my-2" [(ngModel)]="texto1" placeholder="R$ Ex: 1000,00" appCurrencyInput>
+      </div>
+      <div class="form-group my-2">
+        <label for="texto2">Meses para simulação:</label>
+        <input type="number" class="form-control my-2" [(ngModel)]="texto2" placeholder="Meses para simulação | Ex: 1">
+      </div>
+
+      <div class="mt-5">
+        <button class="btn btn-primary d-inline mr-2" style="margin-right: 40px;" (click)="clicouBotao()">Enviar</button>
+        <button class="btn btn-secondary d-inline" (click)="limparResultados()">Limpar</button>
+      </div>
+
+
+      <div *ngIf="resultData" class="mt-3">
+        <p><strong >Resultado Bruto:</strong> {{ resultData.resultadoBruto | currency: 'BRL' }}</p>
+        <p><strong>Resultado Liquido:</strong> {{ resultData.resultadoLiquido | currency: 'BRL' }}</p>
+      </div>
+
+      <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+        <pre>{{ errorMessage }}</pre>
+      </div>
+    </div>
+    </div>
+</div>
